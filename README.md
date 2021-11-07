@@ -19,6 +19,9 @@ This describes a minimal setup on Linux.
 - `export FLASK_ENV=production` (set to development for debug mode)
 - `flask run --host 0.0.0.0 --port 5000`
 
+## Usage
+Find your desired station's numeric ID (*todo: add guide on how to do this*) and navigate to, `http://localhost:5000/departures/<station_id>`.
+
 ## Future plans
 - Enable filtering types of transportation
 - Enable customizing the timespan in minutes that shall be included (e.g. 60min from now)
