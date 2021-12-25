@@ -21,10 +21,10 @@
                 <tr class={{abfahrt.Produkt}}>
                     <td>
                         <img src={{ url_for('static', filename='img/icon_' + abfahrt.Produkt + '.png') }} style="height: 1em" />
-                        {{abfahrt.Linienname}}
+                        {{ abfahrt.Linienname }}
                     </td>
                     <td>{{ abfahrt.Richtungstext }}</td>
-                    <td>{{ abfahrt.AbfahrtszeitIst.strftime('%H:%S') }} Uhr</td>
+                    <td>{{ abfahrt.AbfahrtszeitIst.strftime('%H:%M') }} Uhr (in {{ abfahrt.AbfahrtszeitIstIn }} min)</td>
                 </tr>
             {% endfor %}
             </tbody>
